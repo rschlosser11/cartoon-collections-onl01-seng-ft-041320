@@ -23,5 +23,5 @@ def find_the_cheese(foods)
   foods.collect do |food|
     cheese_types.include?(food) ? (return food) : nil
   end
-  (cheese_types & food).empty? == true ? nil : false;
+  (cheese_types & foods).empty? == true ? nil : false;
 end
